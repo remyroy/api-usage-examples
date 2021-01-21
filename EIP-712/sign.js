@@ -55,7 +55,9 @@ async function sign()
 
   // Might need to replace _signTypedData with signTypedData as mentionned on https://docs.ethers.io/v5/api/signer/#Signer-signTypedData
   const signature = await signer._signTypedData(domain, types, value);
-  console.log(signature);
+  
+  const responseTextarea = document.querySelector('#response');
+  responseTextarea.value = 'Signature response is ' + signature;
 }
 
 const signBtn = document.querySelector('#signBtn');
