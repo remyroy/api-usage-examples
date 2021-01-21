@@ -9,17 +9,18 @@ Adapted from https://weijiekoh.github.io/eip712-signing-demo/index.html
   </head>
   <body>
     <p>
-      This page demonstrates how to sign EIP712 typed data using MetaMask and
-      verify it in Solidity. Feel free to learn from it and adapt it for your
-      dApp and smart contracts.
+      This page demonstrates how to sign EIP712 typed data using MetaMask.
     </p>
 
+    <button id="connectWallet">Connect wallet</button>
+    <br />
     <button id="signBtn">Click here to sign some typed data</button>
     <br />
     <textarea readonly rows=10 cols=80 id="response">
     </textarea>
 
-
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.26.umd.min.js"
+        type="application/javascript"></script>
     <script src="./sign.js" language="javascript"></script>
   </body>
 </html>
